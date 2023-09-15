@@ -1,0 +1,48 @@
+
+
+Link tham khảo:
+	https://docs.cloudera.com/HDPDocuments/HDP2/HDP-2.6.5/bk_security/content/knox_gateway_deployment_architecture.html
+Application Gateway la gi?
+	clip huong dan:
+		https://www.youtube.com/watch?v=8NrO8nHHPDs
+		how does Application gateway work?
+			Xem clip phut 10:56 
+		Component of application gateway?
+			Xem clip phut 13:43
+LDAP là gì?
+	ref link: https://www.okta.com/identity-101/what-is-ldap/
+	What Is LDAP?
+		+ LDAP là một protocol dùng cho việc "accessing and maintaining authentication information"
+		+ LDAP can also tackle authentication, so users can sign on just once and access many different files on the server.(verify 1 lần và truy cập nhiều tài nguyên khác nhau)
+	How LDAP work?
+		Two methods LDAP authenticate the user:
+			+ SIMPLE: The correct name and password connect the user to the server. 
+			+ SIMPLE AUTHENTICATION AND SECURITY LAYER (SASL). A secondary service, such as Kerberos, performs authentication before the user can connect. For companies that require advanced security, this can be a good option.
+		LDAP query:
+		+ Session connection. The user connects to the server via an LDAP port. 
+		+ Request. The user submits a query, such as an email lookup, to the server. 
+		+ Response. The LDAP protocol queries the directory, finds the information, and delivers it to the user. 
+		+ Completion. The user disconnects from the LDAP port.
+	Operations with LDAP:
+		+ Add. Enter a new file into the database. 
+		+ Delete. Take out a file from the database. 
+		+ Search. Start a query to find something within the database. 
+		+ Compare. Examine two files for similarities or differences. 
+		+ Modify. Make a change to an existing entry.
+ 	LDAP Terms to Understand
+		+ Data models
+		+ Distinguished name 
+		+ Modifications
+		+Relative distinguished name (RDN)
+		+ Schema
+		+ URLs
+		+ URI
+	
+	vocab: 
+		in concert with: phoi hop vs
+		tapping away at a computer: khai thac may tinh
+		impenetrable 
+		novices: nguoi  moi vao nghe
+
+Knox documents
+	https://knox.apache.org/books/knox-0-13-0/dev-guide.html
