@@ -1,0 +1,3 @@
+Hướng dẫn của anh Tình:
+nó nằm trong được dẫn <tomcat>/webapps/<folderproject>/WEB-INF/classes
+em vào con sv8 đang setup con monitor xem cái file cấu hình file cas_en_US.properties như thế nào
