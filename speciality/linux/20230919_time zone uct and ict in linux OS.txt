@@ -1,0 +1,7 @@
+Difference between UTC and ITC time zone?
+=============================
+=============================
+Mô tả case lỗi:
+	Sv 142 chạy date ra đúng giờ 17h30
+	Nhưng khi chạy hdfs thì lại ra 10h30
+=============================
