@@ -74,7 +74,7 @@ vocab:
 	agile: nhanh nhen, ability move quickly
 	thermometer: nhiet ke
 	keep your feet stattionary
-	exhale: hit tho
+	in/exhale: hit tho
 	self-fulfillment: qua trinh tu hoan thien
 	eavesdrop: nghe len to listen to someone's private conversation from close by without them knowing
 	villain:
