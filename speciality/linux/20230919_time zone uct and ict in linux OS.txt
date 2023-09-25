@@ -1,0 +1,69 @@
+Difference between UTC and ITC time zone?
+=============================
+ref link:
+	https://www.techtarget.com/searchnetworking/definition/Network-Time-Protocol
+	https://forums.linuxmint.com/viewtopic.php?t=265008
+	https://linuxhint.com/sync-time-ntp-server-linux/
+	https://www.reddit.com/r/linuxquestions/comments/hv224y/why_is_utc_recommended_over_rtc_for_linux/
+	https://unix.stackexchange.com/questions/297147/why-is-etc-localtime-a-symbolic-link
+=============================
+Mô tả case lỗi:
+	Sv 142 chạy date ra đúng giờ 17h30
+	Nhưng khi chạy hdfs thì lại ra 10h30
+gg dich:
+	discrepancy: su khac biet
+	stratum : tầng lớp
+	mitigation: giam nhe
+	 backward-compatible : tuong thich nguoc
+	 
+=============================
+NTP: 
+	stand for network time protocol
+	NTP also is the client-server programs
+How does NTP work?	
+	1. NTP client initiates a time-request exchange with the NTP server
+	2. The client is then able to calculate the link delay and its local offset and adjust its local clock to match the clock at the server's computer
+	3. As a rule, SIX message exchanges over a period of about FIVE to 10 minutes are required to initially set the clock.
+		when synchronized, the client updates every 10 min (only need ONE message exchange)
+Port for communication:
+	Port: 123 on server side
+What are NTP features?
+	Specialized receivers: la nhung bo tinh toan thoi gian chuyen biet
+	Kho the may tinh nao cung co the trang bi duoc
+	NTP uses Coordinated Universal Time (UTC) to synchronize computer clock times
+What are stratum levels
+	There are 4 strata:
+		Stratum 0
+		Stratum 1
+		Stratum 2
+		Stratum 3
+2 important definition 
+	RTC = Real Time Clock
+		is the device in your computer that keeps track of time even when the computer is turned off & unplugged. That's the reason for the CMOS battery in your system - - to keep the clock running, and to save certain BIOs settings.
+		==> RTC show Greenwich Mean Time 
+	UTC = Universal Time Coordinated
+How to check RTC, UTC, Location time:
+	run command: "timedatectl"
+window and linux RTC:
+	Both Linux and Windows use the RTC. The difference is that Linux sets the RTC to universal time (UTC) and Windows sets it to local time (LT).
+LT: local time
+Daylight saving time:
+	Quy ước giờ mùa hè hay giờ tiết kiệm ánh sáng ban ngày (DST) là quy ước chỉnh đồng hồ tăng thêm một khoảng thời gian (thường là 1 giờ) so với giờ tiêu chuẩn 
+Comparition between fail server:
+	Correct server:
+	[root@billdatanode143 vt_admin]# hwclock -r
+		Wed 20 Sep 2023 10:42:05 PM ICT  -0.189965 seconds
+	wrong server:
+	[root@billdatanode146 vt_admin]# hwclock -r
+		Wed 20 Sep 2023 10:42:05 PM +07  -0.394072 seconds
+		
+fix : 
+	unlink /etc/localtime
+	ln -s /usr/share/zoneinfo/Asia/Ho_Chi_Minh /etc/localtime
+Why?
+	why we need to create link and not just to copy the file
+	from /usr/share/zoneinfo/UTC to /etc/localtime as:
+		cp /usr/share/zoneinfo/UTC /etc/localtime
+	Explain:
+		Your /etc/localtime won't be updated when timezone files are updated (this happens every few years, typically when some countries change their DST regulations). Linking makes sure it stays up to date.
+		
