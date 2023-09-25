@@ -46,3 +46,10 @@ LDAP là gì?
 
 Knox documents
 	https://knox.apache.org/books/knox-0-13-0/dev-guide.html
+	Overview
+		Is reverse proxy
+		2 definition:
+			reverse proxy:
+				Giong nhu thrift LB
+			forward proxy:
+				giong nhu proxy cai dat tren chrome

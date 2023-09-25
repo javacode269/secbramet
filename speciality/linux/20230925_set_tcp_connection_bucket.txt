@@ -1,0 +1,50 @@
+Hướng dẫn xử lý cảnh báo SSH
+1.   Thực hiện kiểm tra xem tiến trạng thái nào không giải phóng bằng lệnh
+`ss   -s`
+2. Kiểm tra giá trị bucket đang cấu hình: sysctl -a | grep "net.ipv4.tcp_max_tw_buckets"
+3. giới hạn giá trị bucket: estab=`ss -s 2&gt;/dev/null | grep   "(estab"| awk
+'{print $4}'| cut -d',' -f1`; a1=`sysctl -a   2&gt;/dev/null | grep -iw
+net.ipv4.tcp_max_tw_buckets`; [[ $estab -lt 5120 ]]   &amp;&amp; (echo $a1 1&gt;
+/var/tmp/net.ipv4.tcp_max_tw_buckets; sed -i
+'/^net.ipv4.tcp_max_tw_buckets/d' /etc/sysctl.conf; echo
+"net.ipv4.tcp_max_tw_buckets = 10240" &gt;&gt; /etc/sysctl.conf;   sysctl -w
+net.ipv4.tcp_max_tw_buckets=10240) || (echo $((2 * estab)) 1&gt;
+/var/tmp/net.ipv4.tcp_max_tw_buckets; sed -i
+'/^net.ipv4.tcp_max_tw_buckets/d' /etc/sysctl.conf; echo
+"net.ipv4.tcp_max_tw_buckets = $((2 * estab))" &gt;&gt;   /etc/sysctl.conf; sysctl
+-w net.ipv4.tcp_max_tw_buckets=$((2 * estab)))
+4. Trường hợp máy chủ đã sử dụng số lượng socket vượt quá số lượng của OS thì check các tiến trình đang chiếm nhiều socket để bảo đơn vị quản lý ứng
+dụng xử lý: 
+		netstat -anp| awk '{print $7}' | sort | uniq -c | sort -k1
+ví dụ: các tiến trình 17339/java,15130/java,17609/java đang chiếm nhiều
+socket
+[root@voffice-app-235 ~]# netstat -anp| awk '{print $7}' | sort | uniq -c | sort -k1 
+      1 46852/blackbox_expo
+  14932 17339/java
+  15833 15130/java
+      1 59507/filebeat 
+  16909 16770/java 
+  17354 17609/java
+[root@voffice-app-235 ~]#
+
+==============================================
+==============================================
+vocab:
+	graceful : duyen dang
+==============================================
+==============================================
+Ref link:
+	https://stackoverflow.com/questions/45979123/what-is-the-side-effect-of-setting-tcp-max-tw-buckets-to-a-very-small-value
+	https://www.geeksforgeeks.org/tcp-connection-termination/
+==============================================
+==============================================
+TCP Connection Termination
+	2 types of connection releases:
+		Graceful connection release
+		Abrupt connection release
+	RST: reset
+	ACK: acknowledging
+			
+ 
+
+ 
