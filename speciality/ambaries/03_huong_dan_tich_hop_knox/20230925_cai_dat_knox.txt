@@ -53,3 +53,22 @@ Knox documents
 				Giong nhu thrift LB
 			forward proxy:
 				giong nhu proxy cai dat tren chrome
+				
+	Architecture Overview
+		Knox Gateway: a layer over an embedded Jetty JEE server
+		JEE Servlet Filter 
+		Knox has 2 mechanisms:
+			Service:
+				Provides a way to add support for new HTTP/REST endpoints
+				WebHdfs is plugged into the Knox gateway as a Service
+			Provider:
+				Adding new features to the gateway that can be used across Services
+				
+		Guideline intergrate knox with hdfs:
+			https://github.com/danielfrees/medium-publishing/blob/master/hdfs_datastage_flow.md#hadoop-hdfs-on-aws-datastage-flow-tutorial
+		Service and Provider integrations interact with the gateway framework in two distinct phases:
+			Deployment:
+				Responsible for converting to understand configuration called topology into JEE WebArchive (WAR)
+			Runtime
+				Is the processing of requests via a set of Filters configured in the WAR.
+				
