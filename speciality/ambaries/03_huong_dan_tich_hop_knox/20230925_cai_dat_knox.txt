@@ -2,6 +2,7 @@
 
 Link tham khảo:
 	https://docs.cloudera.com/HDPDocuments/HDP2/HDP-2.6.5/bk_security/content/knox_gateway_deployment_architecture.html
+	https://knox.apache.org/
 Application Gateway la gi?
 	clip huong dan:
 		https://www.youtube.com/watch?v=8NrO8nHHPDs
@@ -53,9 +54,8 @@ Knox documents
 				Giong nhu thrift LB
 			forward proxy:
 				giong nhu proxy cai dat tren chrome
-				
-	Architecture Overview
-		Knox Gateway: a layer over an embedded Jetty JEE server
+	Architecture Overview 
+	Knox Gateway: a layer over an embedded Jetty JEE server
 		JEE Servlet Filter 
 		Knox has 2 mechanisms:
 			Service:
@@ -71,4 +71,59 @@ Knox documents
 				Responsible for converting to understand configuration called topology into JEE WebArchive (WAR)
 			Runtime
 				Is the processing of requests via a set of Filters configured in the WAR.
-				
+		-Is a layer over an embedded Jetty JEE server
+		- JEE Servlet Filter
+		- Has 2 extensibility  mechanisms:
+			Service:
+				Ex: WebHdfs is plugged into the Knox gateway as a Service
+			Provider
+				Allows adding new features to the gateway that can be used across Services
+		- Service and Provider interact with gateway in 2 phase:
+			runtime
+				Is the processing of requests via a set of Filters configured in the WAR.
+			deployment:
+				+is responsible for converting fairly simple to understand configuration called topology into JEE WebArchive (WAR)
+		- JEE WebArchive  (WAR)	
+			deployment:
+			runtime:
+	Project Overview 
+	SPI: stand for Serial Peripheral Interface thiet bi ngoai vi
+		gateway-util-common	----	Common low level utilities used by many modules.
+		gateway-util-launcher	----	The launcher framework.
+		gateway-util-urltemplate	----	The i18n logging and resource framework.
+		gateway-i18n	----	The URL template and rewrite utilities
+		gateway-i18n-logging-log4j	----	The integration of i18n logging with log4j.
+		gateway-i18n-logging-sl4j	----	The integration of i18n logging with sl4j.
+		gateway-spi	----	The SPI for service and provider extensions.
+		gateway-provider-identity-assertion-common	----	The identity assertion provider base
+		gateway-provider-identity-assertion-concat	----	An identity assertion provider that facilitates prefix and suffix concatenation.
+		gateway-provider-identity-assertion-pseudo	----	The default identity assertion provider.
+		gateway-provider-jersey	----	The jersey display provider.
+		gateway-provider-rewrite	----	The URL rewrite provider.
+		gateway-provider-rewrite-func-hostmap-static	----	Host mapping function extension to rewrite.
+		gateway-provider-rewrite-func-service-registry	----	Service registry function extension to rewrite.
+		gateway-provider-rewrite-step-secure-query	----	Crypto step extension to rewrite.
+		gateway-provider-security-authz-acls	----	Service level authorization.
+		gateway-provider-security-jwt	----	JSON Web Token utilities.
+		gateway-provider-security-preauth	----	Preauthenticated SSO header support.
+		gateway-provider-security-shiro	----	Shiro authentiation integration.
+		gateway-provider-security-webappsec	----	Filters to prevent common webapp security issues.
+		gateway-service-as	----	The implementation of the Access service POC.
+		gateway-service-definitions	----	The implementation of the Service definition and rewrite files.
+		gateway-service-hbase	----	The implementation of the HBase service.
+		gateway-service-hive	----	The implementation of the Hive service.
+		gateway-service-oozie	----	The implementation of the Oozie service.
+		gateway-service-tgs	----	The implementation of the Ticket Granting service POC.
+		gateway-service-webhdfs	----	The implementation of the WebHdfs service.
+		gateway-server	----	The implementation of the Knox gateway server.
+		gateway-shell	----	The implementation of the Knox Groovy shell.
+		gateway-test-ldap	----	Pulls in all of the dependencies of the test LDAP server.
+		gateway-server-launcher	----	The launcher definition for the gateway.
+		gateway-shell-launcher	----	The launcher definition for the shell.
+		knox-cli-launcher	----	A module to pull in all of the dependencies of the CLI.
+		gateway-test-ldap-launcher	----	The launcher definition for the test LDAP server.
+		gateway-release	----	The definition of the gateway binary release. Contains content and dependencies to be included in binary gateway package.
+		gateway-test-utils	----	Various utilities used in unit and system tests.
+		gateway-test	----	The functional tests.
+		pom.xml	----	The top level pom.
+		build.xml	----	A collection of utility for building and releasing. 
