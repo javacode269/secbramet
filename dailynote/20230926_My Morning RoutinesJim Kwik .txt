@@ -35,8 +35,8 @@ vocab:
 	be kind of : được sử dụng khi bạn đang cố gắng giải thích hoặc mô tả điều gì đó, nhưng bạn không thể chính xác
 	consolidate: củng cố 
 	come up with: san xuat (tao ra may quet dia nghe nhac)
-	repiration: qua trinh ho hap
-	perspriration: qua trinh do mo hoi
+	respiration: qua trinh ho hap
+	perspiration: qua trinh do mo hoi 
 	Probiotic: lợi khuẩn
 	rememebrance: hồi tưởng
 		1. the act of remembering and showing respect for someone who has died or a past event:
