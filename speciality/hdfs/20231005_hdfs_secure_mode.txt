@@ -1,0 +1,45 @@
+SecureMode
+==============================
+==============================
+Link: https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SecureMode.html
+==============================
+==============================
+
+
+==============================
+==============================
+Kerberos:
+	is an authentication protocol
+	Put the problem:
+		usually, using password to prove your identity
+		weakness of using password is easy being eavesdrop
+		need a means to authentication users to use any service anytime 
+	Kerberos have 2 purpuses:
+		authentication
+		security
+	3 component join:
+		client 
+		KDC(Key distributed center)
+			2 server:
+				Authentication server (AS)
+				Ticket granting server (TGS)
+		server
+	How it work:
+		client have id 
+		id - password was save in database
+		password is sharekey
+		password is key to encrypt (in  side client)
+		password is key to descrypt (in  side server)
+		AS send privateKeyX_encrypt(TGT) to client
+		client send privateKeyX_encrypt(TGT) to TGS
+		TGS will descrypt (privateKeyX_encrypt(TGT)), send back encrypt_keyFileServer(token) to client
+		keyFileServer is share key of TGS with FileServer
+		client send request with token to FileServer
+		Link ref: https://www.youtube.com/watch?v=_44CHD3Vx-0
+==============================
+==============================
+
+keytab:
+==============================
+==============================
+a
