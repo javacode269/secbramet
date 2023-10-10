@@ -1,0 +1,52 @@
+20231006
+=========================
+=========================
+Lớp phòng cháy chứa cháy 
+=========================
+=========================
+Các nguồn gây cháy:
+Bơm xăng:
+	=> Kéo áo phát tia lửa điện => Cháy
+Rượu 
+	=> Rượu nặng dễ bắt cháy vs 
+Chai nước 
+	=> Lăng kính hội tụ => gây cháy
+Rem cửa
+	=> Rèm 2 lớp, vải voan nhiệt độ bắt lửa thấp => Cháy
+Xe:
+	=> Đề nổ => Cháy
+=========================
+=========================
+Trẻ con hút thuốc
+	=> Bố mẹ phải làm gương cho con cái
+Ngọn lửa trần
+	=> Hút thuốc đúng nơi quy định
+Cháy
+	=> Nhiệm vụ đầu tiên là cứu người
+Chức năng bình chữa cháy:
+	Bình bột: Có thể phun cách xa 2.5m
+	Bình CO2: Loa phun phải kê sát miệng lửa
+Cục sạc:
+	Không dùng chung sạc
+Máy tính:
+	Tắt khi sử dụng
+Cách gọi 114:
+	Trường hợp gọi cấp cứu qua camera:
+		114 là lực lượng chuyên nghiệp trong trường hợp cùng vùng
+		Trong trường hợp khác vùng thì phải gọi mã vùng
+Tự chữa cháy:
+	Lăn tròn
+	Cuộn rèm và lăn
+	Dùng nước làm mát vết thường => Đưa đến cơ sở y tế...
+Xử lý tình huống:
+	cắt điện, báo động cháy
+	tổ chức chữa cháy ban đầu
+Mở cửa:
+	Đứng ở một bên cửa để mở
+	Check xem có khói, có lửa không?
+	Lấy khăn chèn => sau đó dội nước
+	Dùng chăn ướt hay chăn khô để dập => Dùng chăn khô để dập 
+Triển khai vòi chữa cháy:
+	2 vòi:
+		Vòi 1 trực tiếp
+		Vòi 2 làm mát cho người 1

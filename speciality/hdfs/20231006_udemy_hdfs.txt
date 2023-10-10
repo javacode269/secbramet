@@ -1,0 +1,55 @@
+==============================
+==============================
+Kerberos:
+	is an authentication protocol
+	Put the problem:
+		usually, using password to prove your identity
+		weakness of using password is easy being eavesdrop
+		need a means to authentication users to use any service anytime 
+	Kerberos have 2 purpuses:
+		authentication
+		security
+	3 component join:
+		client 
+		KDC(Key distributed center)
+			2 server:
+				Authentication server (AS)
+				Ticket granting server (TGS)
+		server
+	How it work:
+		client have id 
+		id - password was save in database
+		password is sharekey
+		password is key to encrypt (in  side client)
+		password is key to descrypt (in  side server)
+		AS send privateKeyX_encrypt(TGT) to client
+		client send privateKeyX_encrypt(TGT) to TGS
+		TGS will descrypt (privateKeyX_encrypt(TGT)), send back encrypt_keyFileServer(token) to client
+		keyFileServer is share key of TGS with FileServer
+		client send request with token to FileServer
+		Link ref: https://www.youtube.com/watch?v=_44CHD3Vx-0
+	important definition:
+		Kerberos principal:
+			unique identity which kerberos can assign ticket to
+			principal can be a user or a service
+			sample:
+				user@realm: joe@EXAMPLE.COM
+				service@realm: hdfs@EXAMPLE.COM
+				user/host@realm: joe/node1.example.com@EXAMPLE.COM
+		KEYTAB
+			Every principal need a password to login to Kerberos
+			all Hadoop service like hdfs, yarn.. also need a principal, but they don't have password(because they aren't not user)
+			=> a way to store the "password" in a file (so-called KEYTAB)
+			KEYTAB save a unique key that can be used by services to authenticate themselves with Kerberos
+			On the Linux system, when a service has read access this keytab, it can authenticate using its principal name (service name) 
+			and the keytab as a password
+==============================
+==============================
+Kerberos on HDFS:
+	Demo:
+		Existing MIT KDC:
+			Checklist:
+				Ambari Server and cluster hosts have network access to both the KDC and KDC admin hosts.
+				KDC administrative credentials are on-hand.
+				The Java Cryptography Extensions (JCE) have been setup on the Ambari Server host and all hosts in the cluster.
+		
