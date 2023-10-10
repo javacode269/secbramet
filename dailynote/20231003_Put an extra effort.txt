@@ -16,7 +16,7 @@ vocab:
 	in reward: 
 	i'm thrill: extremely pleased and excited
 	you have genius inside of you
-	
+	grit: longf can dam
 ========================
 script:
 	limitless: 
