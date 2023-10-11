@@ -42,4 +42,6 @@ Kerberos:
 keytab:
 ==============================
 ==============================
-a
+
+Mapping from Kerberos principals to OS user accounts
+	

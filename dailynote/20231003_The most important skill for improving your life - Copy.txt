@@ -13,7 +13,7 @@ https://www.youtube.com/watch?v=NqMTqy4X6h0
 vocab:
 	
 	dopamine hit:
-	neglect: cẩu thả, sao nhãng, không chú ý	
+	neglect: cẩu thả, sao nhãng, không chú ý = superficial 	
 	baseline of dopamine: 
 	transiently: ngan ngui, nhat thoi
 	propensity: khuynh huong
