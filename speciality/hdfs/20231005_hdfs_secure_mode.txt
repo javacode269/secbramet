@@ -40,6 +40,13 @@ Kerberos:
 ==============================
 
 keytab:
+		KEYTAB
+			Every principal need a password to login to Kerberos
+			all Hadoop service like hdfs, yarn.. also need a principal, but they don't have password(because they aren't not user)
+			=> a way to store the "password" in a file (so-called KEYTAB)
+			KEYTAB save a unique key that can be used by services to authenticate themselves with Kerberos
+			On the Linux system, when a service has read access this keytab, it can authenticate using its principal name (service name) 
+			and the keytab as a password
 ==============================
 ==============================
 
