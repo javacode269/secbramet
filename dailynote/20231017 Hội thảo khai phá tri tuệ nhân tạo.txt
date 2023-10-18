@@ -32,4 +32,8 @@ Cau hoi:
 	Anh huong cua chat GPT:
 		=> Chat GPT ra manh nhung dinh huong can AI phai giai thich duoc nguon goc thong tin
 		=> Policy : can co mot dao luat de chi ra duoc ...
-		,
+	
+	
+	Hoi ve viec tu hoc:
+		+ Cap nhat va luot
+		+ Cac kien thuc can ban (STEM, goc de) thi buoc phai tim hieu sau

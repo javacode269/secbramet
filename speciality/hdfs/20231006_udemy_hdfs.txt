@@ -22,7 +22,19 @@ Kerberos:
 		Key Distribution Center, or KDC : The trusted source for authentication in a Kerberos-enabled environment.
 		Kerberos KDC Server: The machine, or server, that serves as the Key Distribution Center (KDC).
 	kadmin service:
-		
+		Step 3: 
+			Start service
+				/etc/rc.d/init.d/krb5kdc start
+
+		Step 4:
+			Set auto-start on boot for service:
+				When installing and managing your own MIT KDC, it is very important to set up the KDC server to auto-start on boot. 
+			commandline: 
+				systemctl enable krb5kdc
+				Created symlink from /etc/systemd/system/multi-user.target.wants/krb5kdc.service to /usr/lib/systemd/system/krb5kdc.service.
+		Step 5:
+			Start service kadmin:
+			systemctl start kadmin
  
 ==============================
 ==============================
@@ -43,6 +55,7 @@ Kerberos on HDFS:
 				Initializing database '/var/kerberos/krb5kdc/principal' for realm 'DATALAKE.LUMITEL.COM'
 				master key name 'K/M@DATALAKE.LUMITEL.COM'
 				==> pass: datalakelumitel@2023
+			
 			
 
 
