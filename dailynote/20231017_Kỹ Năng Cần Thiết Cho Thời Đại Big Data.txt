@@ -1,0 +1,43 @@
+Statistical Thinking
+ Kỹ Năng Cần Thiết Cho Thời Đại Big Data
+
+==============================================
+https://www.youtube.com/watch?v=VIyK8Tq3YRw
+==============================================
+
+mot so thuat ngu moi:
+	mean
+	mode
+	max/min
+	percentile
+	quantile
+	median
+	5 kien thuc thong ke can nam:
+		1. Data type
+			Catagorical: kiểu loại
+				binary
+				ordinal
+				nominal
+			numerical: số
+				continous
+				discrete
+		2. Descriptive statistic 
+			estimate location:
+				mean
+				mode
+				median
+			estimate distribution:
+				histogram
+				boxplot
+				scatterplot
+			percentile, quantile
+		3. sampling
+		4. Phuong phap kiem dinh gia thiet(Hypothesis testing)
+			Z-test
+			T-test
+		5. Regression analysis
+			Linear regression
+			logistic regression
+			
+	Nguon hoc xac suat thong ke:
+		https://madzynguyen.com/nguon-hoc-thong-ke-statistics/

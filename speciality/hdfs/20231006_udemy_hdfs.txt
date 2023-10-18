@@ -17,6 +17,13 @@ Kerberos:
 			2 server:
 				Authentication server (AS)
 				Ticket granting server (TGS)
+	Terminology:
+		ref: https://docs.cloudera.com/HDPDocuments/HDP2/HDP-2.5.3/bk_security/content/_kerberos_overview.html
+		Key Distribution Center, or KDC : The trusted source for authentication in a Kerberos-enabled environment.
+		Kerberos KDC Server: The machine, or server, that serves as the Key Distribution Center (KDC).
+	kadmin service:
+		
+ 
 ==============================
 ==============================
 Kerberos on HDFS:
@@ -36,4 +43,6 @@ Kerberos on HDFS:
 				Initializing database '/var/kerberos/krb5kdc/principal' for realm 'DATALAKE.LUMITEL.COM'
 				master key name 'K/M@DATALAKE.LUMITEL.COM'
 				==> pass: datalakelumitel@2023
-				
+			
+
+
