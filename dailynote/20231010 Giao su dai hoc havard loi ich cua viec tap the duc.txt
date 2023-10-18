@@ -21,7 +21,7 @@ vocab:
 	penia: hinh phat
 	superficial: hoi hot
 	orcas: ca voi sat thuc
-	accruing: tichlu
+	accruing: tichluy
 	folklore: van hoa dan gian
 	retire: 
 	subsistence: su ton tai, ke sinh nhai

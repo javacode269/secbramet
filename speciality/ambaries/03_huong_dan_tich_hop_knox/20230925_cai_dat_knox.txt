@@ -34,7 +34,7 @@ LDAP là gì?
 		+ Data models
 		+ Distinguished name 
 		+ Modifications
-		+Relative distinguished name (RDN)
+		+ Relative distinguished name (RDN)
 		+ Schema
 		+ URLs
 		+ URI

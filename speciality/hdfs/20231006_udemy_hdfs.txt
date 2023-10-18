@@ -1,4 +1,6 @@
 ==============================
+Link course udemy:
+https://fpt-software.udemy.com/course/learn-big-data-the-hadoop-ecosystem-masterclass/learn/lecture/4762842#overview	
 ==============================
 Kerberos:
 	is an authentication protocol
@@ -15,34 +17,25 @@ Kerberos:
 			2 server:
 				Authentication server (AS)
 				Ticket granting server (TGS)
-		server
-	How it work:
-		client have id 
-		id - password was save in database
-		password is sharekey
-		password is key to encrypt (in  side client)
-		password is key to descrypt (in  side server)
-		AS send privateKeyX_encrypt(TGT) to client
-		client send privateKeyX_encrypt(TGT) to TGS
-		TGS will descrypt (privateKeyX_encrypt(TGT)), send back encrypt_keyFileServer(token) to client
-		keyFileServer is share key of TGS with FileServer
-		client send request with token to FileServer
-		Link ref: https://www.youtube.com/watch?v=_44CHD3Vx-0
-	important definition:
-		Kerberos principal:
-			unique identity which kerberos can assign ticket to
-			principal can be a user or a service
-			sample:
-				user@realm: joe@EXAMPLE.COM
-				service@realm: hdfs@EXAMPLE.COM
-				user/host@realm: joe/node1.example.com@EXAMPLE.COM
-		KEYTAB
-			Every principal need a password to login to Kerberos
-			all Hadoop service like hdfs, yarn.. also need a principal, but they don't have password(because they aren't not user)
-			=> a way to store the "password" in a file (so-called KEYTAB)
-			KEYTAB save a unique key that can be used by services to authenticate themselves with Kerberos
-			On the Linux system, when a service has read access this keytab, it can authenticate using its principal name (service name) 
-			and the keytab as a password
+	Terminology:
+		ref: https://docs.cloudera.com/HDPDocuments/HDP2/HDP-2.5.3/bk_security/content/_kerberos_overview.html
+		Key Distribution Center, or KDC : The trusted source for authentication in a Kerberos-enabled environment.
+		Kerberos KDC Server: The machine, or server, that serves as the Key Distribution Center (KDC).
+	kadmin service:
+		Step 3: 
+			Start service
+				/etc/rc.d/init.d/krb5kdc start
+
+		Step 4:
+			Set auto-start on boot for service:
+				When installing and managing your own MIT KDC, it is very important to set up the KDC server to auto-start on boot. 
+			commandline: 
+				systemctl enable krb5kdc
+				Created symlink from /etc/systemd/system/multi-user.target.wants/krb5kdc.service to /usr/lib/systemd/system/krb5kdc.service.
+		Step 5:
+			Start service kadmin:
+			systemctl start kadmin
+ 
 ==============================
 ==============================
 Kerberos on HDFS:
@@ -52,4 +45,17 @@ Kerberos on HDFS:
 				Ambari Server and cluster hosts have network access to both the KDC and KDC admin hosts.
 				KDC administrative credentials are on-hand.
 				The Java Cryptography Extensions (JCE) have been setup on the Ambari Server host and all hosts in the cluster.
-		
+	Lab enable service KDC in server vtb-bi-03 thi truong BRD:
+		Huong dan tạo realm:
+			https://docs.cloudera.com/HDPDocuments/HDP2/HDP-2.5.3/bk_security/content/_optional_install_a_new_mit_kdc.html
+			https://docs.cloudera.com/HDPDocuments/HDP2/HDP-2.5.3/bk_security/content/_kerberos_overview.html
+		Step 1:
+			Create MIT KDC database:
+				kdb5_util create -s -r DATALAKE.LUMITEL.COM
+				Initializing database '/var/kerberos/krb5kdc/principal' for realm 'DATALAKE.LUMITEL.COM'
+				master key name 'K/M@DATALAKE.LUMITEL.COM'
+				==> pass: datalakelumitel@2023
+			
+			
+
+
