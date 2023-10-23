@@ -1,0 +1,57 @@
+Ly thuyet ve part 5:
+	Game : 
+		Cashier
+		Chef
+		flight attendant
+		waiter
+		patient
+		receptionist
+		musician
+		audience
+		pedestrian
+		athlete
+		telescope
+		cart
+		curtain
+		blind
+		carpet/rug
+		tire
+		wheel
+		wheelbarrow
+		escalator
+		scarf
+		umbrella
+		cushion
+		cabinest
+		cash register 
+		fence
+		jogging
+		go accross
+		hang
+		shoevling
+		wipe
+		sweep
+		trim
+		shaking hand
+		rake
+		tying
+		checking
+		boarding
+		plug in
+		
+Test 6:
+	Trang 23:
+		risk-free: khong rui do
+		cash deposit: tien dat coc
+		just: chi can 
+		simply: mot cach don gian
+		justly: 1 cach cong bang
+		initiative: sang kien
+		entitle to : duoc quyen
+		doctor: bac sy co the cam dao
+		physician: bac sy co the ke don
+		date of return: ngay tro lai
+		deduction: su giam tru
+		time off work: thoi gian nghi viec
+		pecan: qua ho dao
+		colossal : tong
