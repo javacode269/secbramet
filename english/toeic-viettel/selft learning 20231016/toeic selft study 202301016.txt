@@ -1,0 +1,47 @@
+ETS 23 TOEIC Test 1
+part 1:
+	sentence 1:
+		The women standing near the desk
+		the women climbing some stair
+		The women entering the building
+		The women is looking at a map
+	sentence 2:
+		she is swimming in the water
+		she is jogging near the ocean
+		chair are set up on the beach 
+		a hat is lieing on the sand
+	sentence 3:
+		she is switching an item on the display case
+		she is holding on shopping cart
+		some good are arrange on shelves
+		some machandise is full on the floor
+	sentence 4:
+		a fence are painted in the park
+		one of the women is putting on the jacket
+		some people are working on the gardent
+		some people are looking after the tree
+	sentence 5:
+		a carpet is roll up
+		some curtain is closed
+		some cushion is pound on the flow
+		some reading materials is display in front of the sofa
+	sentence 6:
+		some musician is performing on the pot
+		some step is being repaired
+		some musician is stand folder up
+		some instrusment is display on the case
+	vocab:
+		take on: đảm nhận, gánh vác, nhận lấy, nắm lấy
+		hustle goal: hoi hat
+		wallow		đắm mình
+		ingrain     ăn sâu vào trong
+		honk        bấm còi
+		grain       ngũ cốc
+		surrender   đầu hàng
+		ruminating  about thing in my life: ngam nghi
+		
+		
+		
+		
+		
+		
