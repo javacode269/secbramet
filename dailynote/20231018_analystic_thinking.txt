@@ -31,6 +31,12 @@ affirm                  :Xác nhận
 depict                  :miêu tả
 serence                 :sự thanh thản
 time intensive          :tốn nhiều thời gian 
+staggering: sung sot
+slash : chem 
+malevolent: ac tam
+articulate: noi ro rang 
+self-evident: hien nhien 
+
 ====================================
 
 socrates

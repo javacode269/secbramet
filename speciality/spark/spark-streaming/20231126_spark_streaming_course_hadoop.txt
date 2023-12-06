@@ -1,0 +1,39 @@
+https://viettel.udemy.com/course/learn-big-data-the-hadoop-ecosystem-masterclass
+
+Note1 :
+	Su dung thu vien Kafka phai cung version vs spark-verion
+	Vi du: Spark1.5.2 <==> Kafka 1.5.2
+Note 2:
+	demo wordcount in Spark-streaming:
+	1. from pyspark import SparkContext
+	2. from pyspark.streaming import StreamingContext
+	3. from pyspark.streaming.kafka import KàkaUtils 
+	4. sc = SparkContext(appName="streamingExamplewithKafka")
+	5. ssc = StreamingContext(sc, 10)
+	6. opts = {"metadata.broker.list":"node1.com:6667, node2.com.6667"} //Chua thong tin cua service Kafka.
+	7. kvs = KafkaUtils.creasteDirectStream(ssc, ["mytopic], opts)
+	8. lines = kvs.map(lambda x: x[1])
+	9. counts = lines.flatMap(lambda line: line.split(" "))\
+	10. .map(lamda word:(word, 1))\
+	11. .reduceByKey (lambda a, b: a+b)
+	12. counts.pprint()
+	13. ssc.start()
+	14. ssc.awaitTermination()
+
+Note 3:
+	Check version cac thu vien spark trong linux
+	rpm =qa |grep spark 
+Note 4:
+	Chay chuong trinh wordcount vs spark-streaming:
+	1. chay chuong trinh 				||| Push message vao trong queue
+	1.1 wwget link_to_jar_kafka_1.5.2
+	1.2 spark-submit --jars spark-streaming-kafka-assembly_2.10-1.5.2.jar /tmp/stremingWordCount.py
+	2.1 Push message vao trong kafka
+	2.2 export PATH=$PATH:/user/hdp/current/kafka-berker/bin
+	2.3 kafka-console-producer.sh --broker-list node1.example.com.6667 --topic mytopic
+		> Xin chao moi nguoi
+		> Minh ten la tien
+		> Demo
+Note 5:
+	Spark Streaming State and Checkpointing
+	
