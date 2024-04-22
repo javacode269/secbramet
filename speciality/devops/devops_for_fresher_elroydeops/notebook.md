@@ -66,3 +66,200 @@ Khi nao user thi se tao mot group tuong ung vs user do
 1. Thư mục làm việc riêng
 2. User cho dự án riêng
 ```
+
+
+2. Build du an frontend vuejs
+   
+```
+1. Cai cong cu
+  Cai nodejs (tuong duong jdk)
+  apt install nodejs
+  Cai cong cu quan ly goi cua js
+  apt install npm
+
+2. Cai cac thu vien di kem
+  npm install
+3. build
+  npm run build
+3. Run
+  Thong thuong vs du an FE thi co 3 cach de chay duoc du an len
+  Cach 1: Su dung webserver (VD: nginx)
+    dfdf
+  Cach 2: Chay bang service
+    npm run serve
+  Cach 3: Chay bang vm2
+
+  Cach 4: npm run serve
+```
+
+3. Huong dan dung nginx
+
+<u>Buoc 1</u>: Cai dat nginx
+
+    apt-get install nginx
+
+<u>Buoc 2</u>:  Cau hinh
+
+File cau hinh cua nginx duoc dat tai ***/etc/nginx***
+
+VD1: 
+    Thay doi port mac dinh (80 -> 8080)
+
+```
+/etc/nginx/sites-available/default 
+
+server {
+        listen 8080 default_server;
+        listen [::]:8080 default_server;
+```
+VD2: 
+    Tro den mot du an frontend
+
+```
+/etc/nginx/conf.d/todolist.conf
+
+server {
+  listen 8081;
+  root /path/to/project/todolist/dist/;
+  index index.html;
+  try_files $uri $uri /index.html;
+}
+```
+Note:
+
+```
++ De test sytax cua nginx thuong dung lenh
+      nginx -t (t la test)
++ De nginx chay duoc du an frontend cua ban thi phai add user cua nginx vao trong group cua user chay du an
+      user nginx: www-data
+      user du an: todolist
+      usermod -aG todolist www-data 
++ restart 
+      systemctl restart nginx
++ reload lai config (Khong anh huong den cac service khac cung dang dung nginx)
+      nginx -s reload
+```
+
+
+4. Trien khai du an frontend react
+   
+```
+1. tao user vision
+  adduser vision
+2. trien khai duoi dang service cua linux
+  vi /lib/systemd/system/vision.service
+  [Service]
+  Type=simple
+  User=vision
+  Restart=on-failure
+  WorkingDirectory=/home/vision/vision_FE_java/vision/
+  ExecStart=npm run start -- --port=3000
+  ~
+
+  Sau khi edit xong file vision.service                                        
+  systemctl daemon-reload
+  systemctl start vision
+```
+4. Trien khai du an backend nodejs vs PM2
+
+    PM2 la cong cu trien khai app tren moi truong production.
+   
+```
+Sample file config mau cua pm2
+
+*** file ecosystem.config.js***
+
+
+module.exports = {
+  apps : [{
+    name: 'VISION_PROJECT',
+    script: 'npm start',
+    instances: 4,
+    max_memory_restart: '2G',
+    env: {
+      NODE_ENV: 'development'
+    },
+    env_production: {
+      NODE_ENV: 'production'
+    }
+  }]
+}; 
+
+********
+Dung tai thu muc project va Chay lenh pm2 start
+
+
+*******
+Cac lenh pm2 
+pm2 stop <app-name>: Stop the web server process.
+pm2 restart <app-name>: Restart the web server process.
+pm2 delete <app-name>: Remove the web server process from PM2.
+pm2 list: List all processes managed by PM2, including your web server.
+pm2 describe <app-name>: Get detailed information about a specific process.
+
+```
+
+5. Trien khai du an Java co ket noi mariadb
+
+    Du an co ten la shoeshop
+
+Cai dat jdk   => java --version
+Cai dat maven => mvn --version
+
+```
+**********
+Cai dat mariadb:
+  apt install mariadb-server -y
+  config:
+    50-server.cnf
+**********
+Tao user va grant quyen
+root@sv1:/etc/mysql/mariadb.conf.d# mysql -u root 
+
+MariaDB [(none)]> create user 'shoeshop'@'%' identified by 'shoeshop';
+Query OK, 0 rows affected (0.000 sec)
+
+MariaDB [(none)]> grant all privileges on shoeshop.* to 'shoeshop'@'%';
+Query OK, 0 rows affected (0.001 sec)
+
+MariaDB [(none)]> flush privileges;
+Query OK, 0 rows affected (0.001 sec)
+
+
+****
+Chay script tao bang bieu database
+source /home/shoeshop/shoeshop-ecommerce/shoeshop/shoe_shopdb.sql
+
+```
+
+Change size of volume
+```
+archives  pkgcache.bin  srcpkgcache.bin
+root@sv1:/var/cache/apt# lsblk
+NAME                      MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+fd0                         2:0    1    4K  0 disk 
+loop0                       7:0    0 63.3M  1 loop /snap/core20/1828
+loop1                       7:1    0 39.1M  1 loop /snap/snapd/21184
+loop2                       7:2    0 63.9M  1 loop /snap/core20/2182
+loop3                       7:3    0 91.9M  1 loop /snap/lxd/24061
+loop4                       7:4    0 38.8M  1 loop /snap/snapd/21465
+sda                         8:0    0   30G  0 disk 
+├─sda1                      8:1    0    1M  0 part 
+├─sda2                      8:2    0  1.8G  0 part /boot
+└─sda3                      8:3    0 18.2G  0 part 
+  └─ubuntu--vg-ubuntu--lv 253:0    0   10G  0 lvm  /
+sr0                        11:0    1 1024M  0 rom  
+sr1                        11:1    1  1.4G  0 rom  
+root@sv1:/var/cache/apt# lvm
+lvm> lvextend -l +4G ubuntu--vg-ubuntu--lv
+  Invalid argument for --extents: +4G
+  Error during parsing of command line.
+lvm> lvextend --size 14g ubuntu--vg-ubuntu--lv 
+  Please specify a logical volume path.
+lvm> lvextend --size 14g /sda3/ubuntu--vg-ubuntu--lv 
+  "/sda3/ubuntu--vg-ubuntu--lv": Invalid path for Logical Volume.
+lvm> lvextend --size 14g /dev/ubuntu-vg/ubuntu-lv
+  Size of logical volume ubuntu-vg/ubuntu-lv changed from 10.00 GiB (2560 extents) to 14.00 GiB (3584 extents).
+  Logical volume ubuntu-vg/ubuntu-lv successfully resized.
+
+```
