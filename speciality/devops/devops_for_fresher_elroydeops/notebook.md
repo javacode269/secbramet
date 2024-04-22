@@ -250,16 +250,32 @@ sda                         8:0    0   30G  0 disk
   └─ubuntu--vg-ubuntu--lv 253:0    0   10G  0 lvm  /
 sr0                        11:0    1 1024M  0 rom  
 sr1                        11:1    1  1.4G  0 rom  
-root@sv1:/var/cache/apt# lvm
-lvm> lvextend -l +4G ubuntu--vg-ubuntu--lv
-  Invalid argument for --extents: +4G
-  Error during parsing of command line.
-lvm> lvextend --size 14g ubuntu--vg-ubuntu--lv 
-  Please specify a logical volume path.
-lvm> lvextend --size 14g /sda3/ubuntu--vg-ubuntu--lv 
-  "/sda3/ubuntu--vg-ubuntu--lv": Invalid path for Logical Volume.
-lvm> lvextend --size 14g /dev/ubuntu-vg/ubuntu-lv
-  Size of logical volume ubuntu-vg/ubuntu-lv changed from 10.00 GiB (2560 extents) to 14.00 GiB (3584 extents).
-  Logical volume ubuntu-vg/ubuntu-lv successfully resized.
 
+Ban dau / dang mount vao /dev/mapper/ubuntu--vg/ubuntu--lv co size bang 10G
+
+Bi day: KEYWORD
+"Change size of /dev/mapper/ubuntu--vg-ubuntu--lv"
+
+
+Sau do dieu chinh 
+lvdisplay /dev/ubuntu-vg/ubuntu-lv
+lvresize -L +10G /dev/ubuntu-vg/ubuntu-lv
+lvdisplay /dev/ubuntu-vg/ubuntu-lv
+sudo fdisk -l
+df -h
 ```
+
+# GIT
+
+
+1.  INSTALL GITSERVER
+  
+```
+Link: https://packages.gitlab.com/gitlab/gitlab-ee/packages/ubuntu/bionic/gitlab-ee_15.1.4-ee.0_amd64.deb
+
+sudo apt-get install gitlab-ee=15.1.4-ee.0
+```
+2. GIT WORKFLOW
+
+![01_git_work_flow.png](./image_markdown/01_git_work_flow.png)
+
