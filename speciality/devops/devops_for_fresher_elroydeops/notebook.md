@@ -279,3 +279,40 @@ sudo apt-get install gitlab-ee=15.1.4-ee.0
 
 ![01_git_work_flow.png](./image_markdown/01_git_work_flow.png)
 
+
+
+TSDB:  Time Series Database
+PromDB: thuoc loai TSDB
+Hoc ve promql:
+  https://www.youtube.com/watch?v=FLT0d8fyhK4
+
+  ![02_promQL.png](./image_markdown/02_promQL.png)
+
+
+3. investigate components of gitlab-ee
+```
+root@sv1:/home/sv1# gitlab-ctl status
+run: alertmanager: (pid 1328) 77449s; run: log: (pid 1322) 77449s
+run: gitaly: (pid 1305) 77449s; run: log: (pid 1303) 77449s
+run: gitlab-exporter: (pid 1319) 77449s; run: log: (pid 1315) 77449s
+run: gitlab-kas: (pid 1314) 77449s; run: log: (pid 1307) 77449s
+run: gitlab-workhorse: (pid 1327) 77449s; run: log: (pid 1323) 77449s
+run: grafana: (pid 1304) 77449s; run: log: (pid 1302) 77449s
+run: logrotate: (pid 1317) 77449s; run: log: (pid 1312) 77449s
+run: nginx: (pid 1329) 77449s; run: log: (pid 1325) 77449s
+run: node-exporter: (pid 1326) 77449s; run: log: (pid 1310) 77449s
+run: postgres-exporter: (pid 1331) 77449s; run: log: (pid 1324) 77449s
+run: postgresql: (pid 1333) 77449s; run: log: (pid 1313) 77449s
+run: prometheus: (pid 1316) 77449s; run: log: (pid 1311) 77449s
+run: puma: (pid 1321) 77449s; run: log: (pid 1320) 77449s
+run: redis: (pid 1309) 77449s; run: log: (pid 1306) 77449s
+run: redis-exporter: (pid 1318) 77449s; run: log: (pid 1308) 77449s
+run: sidekiq: (pid 1334) 77449s; run: log: (pid 1332) 77449s
+```
+## 2.2: Promethus 
+  link hay ve devops: https://www.youtube.com/@PavanElthepu/playlists
+  [Link Text](path/to/file.md)
+
+
+```
+```
