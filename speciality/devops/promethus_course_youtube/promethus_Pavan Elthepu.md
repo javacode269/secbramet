@@ -3,7 +3,7 @@
 ## Observability vs. Monitoring
 
 
-Tool help us to track the health of invidual component include: database, network, infra-structure
+Tool help us to track the  health of invidual component include: database, network, infra-structure
 
 To monitoring effectively we need to know:
 
