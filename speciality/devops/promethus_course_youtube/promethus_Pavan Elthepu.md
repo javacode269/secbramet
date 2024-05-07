@@ -1,7 +1,17 @@
 # PROMETHUS
 
-## Observability vs. Monitoring
+Link of course: 
+https://www.youtube.com/watch?v=QNTxijK0qxk&list=PLrMP04WSdCjrL4OBnaqXRy8X3XEd7ZrKf&index=2
 
+# Table of content 
+- [Observability vs. Monitoring](#observability-vs-monitoring)
+- [Introduce the Promethus](#introduce-the-promethus)
+- [Promethus architecture](#promethus-architecture)
+
+
+
+
+## Observability vs Monitoring
 
 Tool help us to track the  health of invidual component include: database, network, infra-structure
 
@@ -29,25 +39,28 @@ Monitor is smaller scope of Observability
  ![montor_vs_observability.png](./markdownimage/montor_vs_observability.png)
 
 
- ## INTRODUCE the Promethus
+## Introduce the Promethus
+
+### Intro
+In the above section, we have discussed about observability and monitor.
+Promethus is tool to observer, monitor and escalate the issue in the system.
+
+### What is metric
+![what is metric](./markdownimage/03_what_is_metric.png)
+
+### What is TSDB (time series)
+TSDB stands for Time Series Database. It is a type of database that specializes in storing and managing data points or events that are associated with timestamps or time intervals. TSDBs are designed to efficiently handle time-based data, such as sensor readings, metrics, financial data, or any data that changes over time.
+
+![Time series database](./markdownimage/04_time_series_database.png)
+### what is promethus
+
+![Promethus flow](./markdownimage/05_what_is_promethus.png)
+### Fact about Promethus
+
+Promethus is used in Cloud enviroment.
+several client was install like datadog, nagios, new relic 
 
 
 
- # Table of Contents
-- [Category 1](#category-1)
-- [Category 2](#category-2)
-- [Category 3](#category-3)
 
-# Category 1
-## Content 1
-Content for Content 1 goes here.
-
-## Content 2
-Content for Content 2 goes here.
-
-# Category 2
-## Content 3
-Content for Content 3 goes here.
-
-# Category 3
-## Content 4
+# Promethus architecture
