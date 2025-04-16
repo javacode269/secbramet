@@ -1,0 +1,42 @@
+Sử dụng phương tiện kĩ thuật và công nghệ trong dạy học đại học.
+1. Khái quát chung về phương tiện kỹ thuật và công nghệ
+	Các thành tố của quá trình dạy học:
+		+ Mục tiêu
+		+ Nội dung
+		+ Phương pháp + Phương tiện  =>>>>>>>>> Năng lực (Kiến thức, kỹ năng, đạo đức)
+		+ Người dạy
+		+ Người học
+		+ Tổ chức
+		+ Kết quả đánh giá
+	Các khái niệm về phương tiện dạy học:
+		+ Phương tiện dạy học: 
+			Là tập hợp những đối tượng vật chất và TINH THẦN được người dạy sử dụng để ...
+			Là công cụ để rèn luyện kĩ năng, kĩ xảo.
+		+ Đa phương tiện
+		+ Phân loại phương tiện dạy học 
+	Thảo luận:
+		Theo thấy cô phương tiện kỹ thuật và công nghệ có vai trò như thế nào trong quá trình DHĐH.
+			+Phương tiện kỹ thuật bao gồm: 
+				Truyền thống:
+					Bảng  phấn
+					Sách vở					
+				Hiện đại: 
+					Laptop, tablet
+					Slide, máy chiếu
+					Ứng dụng nền tảng dạy học (padlet, zoom, ggmeet...)
+					Chat GPT, GG...
+					Hỗ trợ người học: Notion, mindmap, 
+				+ Vai trò: 
+					+ Nâng cao trải nghiệm học tập của sinh viên
+					+ Trực quan hóa các vấn đề trừu tượng bằng hình ảnh, video, phần mềm mô phỏng ...
+					+ Kích thích hứng thú của người ho(menti..)
+					+ Giải quyết được các vấn đề về khoảng cách, thời gian bằng cách học qua zoom, hoc online
+					+ Hỗ trợ học sinh trong việc ghi nhớ (flash card, mindmap...)
+					+ Cung cấp các giải pháp khuyến khích s.viên tham gia xây dựng bài (Menti.com)
+				Nhược điểm:
+					+ Nếu cung cấp phương tiện mà hs không dùng đúng => Lười suy nghĩ
+	Kỹ thuật:
+		Kỹ thuật tia chớp
+	Thảo luận:
+		1. 
+		

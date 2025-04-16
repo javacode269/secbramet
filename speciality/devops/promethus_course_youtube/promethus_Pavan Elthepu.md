@@ -64,3 +64,11 @@ several client was install like datadog, nagios, new relic
 
 
 # Promethus architecture
+## intro
+## Promethus server
+## client Libraries
+## Exporter
+## Push gateway 
+## Service Discovery
+## PromQL
+## Alert Manager

@@ -1,0 +1,205 @@
+Phát triển chương trình đào tạo
+Tầm nhìn sứ mạng của chương trình đào tạo
+Mục tiêu:
+	Viết được chuẩn đầu ra cho của CTĐT đáp ứng yêu cầu
+Nội dung chính
+1. Thuật ngữ
+2. Hướng tiếp tiến cận trong phát triển CTĐT
+3. Xây dựng đề cương CTĐT
+
+==================================
+1.1 Thuật ngữ
+	Chương trình đào tạo:
+		Thiết lập mục tiêu trông đội sinh viên đạt được sau khóa học,
+		Phương pháp đào tạo
+		Các thức kiểm tra đánh giá
+	Chuẩn đầu ra:
+		Đánh giá phải sử dụng tiêu chuẩn. (Trong cv hay sử dụng checklist)
+			Chuẩn kiến thức
+			Chuẩn kỹ năng
+			Chuẩn về mức độ tự chủ và trác nhiệm của người học
+	Khung chương trình dạy học
+		Các môn học, chuyên đề
+	Đề cương
+		
+	Ma trận học phần
+		Môn học đóng góp như thế nào vào các chuẩn học phần
+		
+==================================
+2.2 Hướng tiếp cận trong phát triển chương trình đào tạo
+	Hướng tiếp cận xây dựng chương trình đào tạo.
+		Tếp cận nội dung => Thường dẫn đến sinh viên ra trường bằng giỏi nhưng không làm được việc
+		Tiếp cận mục tiếu => Không chú ý đến các yếu tố, 
+		Tiếp cận phát triển
+	Thiết kế ngược:
+	
+2.3: Quá trình phát triển chương trình đạo tạo
+		Phân tích tình hình kinh tế,xã hội
+		Phân tích nhu cầu đào tạo
+		Xác định mục tiêu chương trình đào tạo.
+
+	2.3.1:
+	2.3.2: 
+		Phân tích nhu cầu đào tạo
+		Bài tập thực hành phân tích nhu cầu đào tạo cho nhân viên mới, học quy trình:
+			1. Khóa học đạt chuẩn toeic
+				Đối tượng:
+					Người đi làm, thời gian eo hẹp
+				Hiện trạng:
+					Chưa hiệu quả.
+				
+			==> Rút kinh nghiệm:
+				Chỉ xác định nhu cầu => Nghề nghiệp của học cần làm gì
+	2.3.3:
+		Xác định mục tiêu chương trình đào tạo 
+			VD về khóa học
+				+ Đào tạo cho người học nhận thức được ý nghĩa của quy trình
+				+ Người học nắm được các bước thực hiện của quy trình
+					+ Tài liệu
+					+ Thời gian
+					+ Vai trò trách nhiệm của các thành phần
+					+ Thứ tự các bước thực hiện trong quy trình cho đối tượng nhân sự.
+				+ Đạt được điểm quy trình đạt ngưỡng mức chuẩn(90%)
+				+ Người học tránh được các sai lầm hay gặp hay gặp.
+					
+		==> Cô giáo đánh giá bị nhầm thành chuẩn đầu ra.
+	2.3.4:
+		Xác định chuẩn đầu ra
+			Cơ sở pháp lý:
+			Chuẩn đầu ra bao gồm:
+				Kiến thức thực tế và kiến thức lý thuêts
+				Kỹ năng
+				Tự chủ, trách nhiệm
+			
+			
+		Những yêu cầu khi xác định chuẩn đầu ra:
+			Rõ ràng & thiết thựcĐo lường đánh gái được theo cấp độ tư duy
+			Phải chỉ rõ về kiến thức, kỹ năng, mức độ tự chủ và trách nhiệm
+			3-7 chuẩn đầu ra 
+
+	2.3.5 Thang mục tiêu nhận thức của bloom
+		Ghi nhớ
+			Định nghĩa: Khả năng nhớ lại sự kiện mà không cần phải hiểu chúng.
+			Sự thể hiện: Có thể nhắc lại định luật, mô tả các tính chất
+			Động từ: Mô tả, định nghĩa, kiểm tra, trình bày, ileetj kê, phác thảo, khẳng định...
+		Hiểu
+			Định nghĩa: Khả năng biểu đạt vấn đề và diễn đạt thông tin đã thu nhận được
+			Sự thể hiện: Giải thích các hiện tượng dựa trên các kiến thức đã học, có thể so sánh, đối chiếu, áp dụng các công thwucs đã học.
+		Vận dụng
+			định nghĩa: Là khả năng sử dụng những nội dung học vào những tình huốn bối cảnh 
+			Sự thể hiện: Tính toán theo công thức, đọc được bản vẽ, sơ dồ
+			Các động từ: Tính toán, dự đoán, giải quyết, áp dụng, phacs họa,
+			
+		Phân tích
+		 
+		Đánh giá
+			Định nghĩa: Đưa ra nhận định, đánh giá 
+			Sự thể hiện:
+			CÁc động từ: 
+		SÁng tạo: 
+			Định nghĩa: Đưa ra nhận định, đánh giá 
+			Sự thể hiện:
+			CÁc động từ:
+			
+		===> Không sử dụng các động từ chung chung như nắm được, nắm vưỡng, hiểu, nhận thức ....
+		Sử dụng các động từ trong thang nhận thức bloom như ghi nhớ, hiểu, vận dụng, phân tích, đánh giá, sáng tạo....
+	
+	Các mức độg của kỹ năng
+		Bắc chước:
+		Vận dụng: 
+		Chính xác: 
+		Thành thạo
+		Kỹ xảo
+		
+	Các mức độ của thái độ.
+		Tiếp nhận: Yêu cầu chọn lựa, nhận biết quan điểm,
+		Cởi mở: Đáp lại giúp đỡ tuân theo, thảo luận, thi hành rèn luyện,...
+		Đánh giá: Phân biệt, giải thích, đề xướng, chứng mình, chia sẻ
+		Ý thức tổ chức: Dàn xếp, so sanh, khoái quát hóa, lồng ghép, thay đổi, tổ chức phới hợp.
+		
+		
+		Biểu thị tính cách
+	Nguyên tắc SMART(TT) khi viết chuẩn đầu ra:
+		1. S-spark to the learner: 
+		2. M -Measurable: Chỉ ra các thức đô lường,d dánh giáo
+		3. A-Applicable: Có khả ngnagw thực heienj:
+		4. R Thực tế
+		5. T: Có thời gian, deadline cụ thể.
+	
+	Ví dụ về chuẩn đầu ra:
+	
+		1. mô tả được quy trình
+		1. Áp dụng được quy trình PTPM vào trong các dự án PTPM.
+		2. Người học thành thạo việc viết tài liệu theo chuẩn.
+		3. Người học áp dụng được quy trình để xác định được vai trò và trách nhiệm của các thành tố tham gia quy trình.
+		4. Người học thành thạo thứ tự các bước thực hiện trong quy trình	
+		
+Cấu trúc của module dạy học:
+	Hệ vào 
+		Tiêu đề
+		Hệ thống mục tiêu
+		Test vào
+	Thân module
+		tiểu module: Mục tiêu nội dung DH, PP
+		test trung gian
+	Hệ ra:
+		CHức năng tổng kết
+		Test kết thúc
+
+3.1	Lựa chọn phương pháp dạy học:
+		CÁc PP truyền thống:
+			thuyết rìnhvấn đáp
+			Sử dụng SGK 
+			Trực quan
+			Thực hành
+		
+		Các Phương pháp tích cực:
+			Đóng kịch
+3.2	Lựa chọn phương pháp kiểm tra đánh giá kết quả học tập:
+		Đánh giá chính thức:
+			Bài kiểm tra
+			BÀi tập về nhà
+			Bài tập 
+			Trắc nghiệm 
+			Đánh gái hoạt động trong lớp, các báo cáo chuên đề thảo luật, bài tập nhóm porfolio
+		Đề cương môn học 
+			Nguyên lý thiết kế đề cương:
+				Xác định chuẩn đầu ra 
+			Đề cương phải giải quyết được 2 vấn đề:
+				Thể hiện đống góp của học phần đối vs chuẩn đầu ra (Không quan tâm)
+				Thể hiện sự nhất quán các thành tố trong đề cương học phần.
+			Kỹ thuật xây dựng sơ đồ bong bóng.
+				Chuẩn đầu ra 
+				Nội dung dạy học
+				phương pháp đánh giá
+				Phương pháp giảng dạy
+			Kỹ thauatj xây dựng sơ đồ bong bóng:
+				+ Đặt chuẩn đầu ra vào vòng tròn trung tâm
+				+ Xác định nội dung giảng dạy để đáp ứng chuẩn đầu ra này, mức oddoj thể hiện qua sự gần xa vòng tròn trung tâm theo 3 mức độ:
+					+ Giớ thiệu
+					+ Thuần thục, đủ 
+					+ Nâng cao
+				+ Tiếp tục đặt CLO vào một vòng trong trung tâm 
+Ví dụ:
+	Chuẩn đầu ra :
+	CDR1: Học viên trình bày được cách bước để câu được cá biển
+	CDR2: Thành thạo các kỹ năng sinh tồn trên biển ( Không say song, quy luật con nước, vùng nào có cá, thời tiết, nhận biết các mối nguy độc tố, bão tố...)
+	CDR3: Thành thạo kỹ năng sinh tồn (rau, nước, tạo lửa...)
+	
+	
+	CDR1: Học viên trình bày được các bước đề câu được cá biển
+		+ Trình bày các dụng cụ cần thiết khi đi câu (Cần, mồi, lưỡi, áo phao...)
+		+ Trình bày các bước thực hiện câu cá:  Móc mồi , Quăng cần, Kéo cần
+	CDR2: Thành thạo các kỹ năng sinh tồn 
+		+ THời tiết
+		+ bơi lội 
+	Phương pháp đánh giá: 
+		Đánh giá qua trình diễn của sinh viên
+		Đánh giá qua sản phẩm học tập (Số lượng cá câu trong 1 giờ)
+		
+		
+	Phương pháp giảng dạy:
+		Trực quan 
+		Thực hành
+		
+		
