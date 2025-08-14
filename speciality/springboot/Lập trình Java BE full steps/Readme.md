@@ -130,6 +130,22 @@ Thiết kế một hệ thống mô hình monolithic
 ```java
 https://docs.google.com/spreadsheets/d/1QODcYmAyoOYHNfS7l7UPUQmZvs_LnqK4/edit?gid=353894476#gid=353894476
 ```
+
+
+
+### Thiet ke database vs dbdiagram va tim hieu mo hinh phan quyen RBAC
+
+
+dbdiagram
+
+
+#### Bang phan quyen
+![alt text](image.png)
+
+
+#### Role Base Access Controll
+https://dbdiagram.io/d/Role-Based-Access-Control-6641c9319e85a46d55ad52f9
+
 ### Example 1: Title of the example
 
 ```java

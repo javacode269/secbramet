@@ -1,0 +1,43 @@
+Giảng viên:
+	Nguyễn Nam Phương
+
+CHIA SẺ THỰC TIỄN NHÓM 2
+Quan điểm:
+	Quan điểm hiện đại:
+		Đánh giá kết quả đầu ra
+		Tập trung phát triển năng lực người học => mục đích của đánh giá là xem người học thiếu-yếu gì để người dạy bồi dưỡng thêm.
+		Người học chủ động đánh giá => Từ kết quả đánh giá  người học tương tác ngược lại vs người dạy, người học để nâng cao kiến thức, bao phủ lại các kiến thức bị hổng.
+Khó khăn:
+		Sẽ mất nhiều nguồn lực hơn
+		Việc đánh giá tính chủ động của người học gặp khó khăn ( Rào cản về công cụ, Tâm lý học viên không rụt rè chia sẻ)
+Giải pháp:	
+		Đầu tư nhiều hơn về nguồn lực
+		Đầu tư về công cụ (VD: padlet...)
+		Xây dựng các phương pháp thúc đẩy học sinh tích cực phản hồi tương tác
+
+Bài tập 2:
+	Phương pháp đánh giá quan sát(nhìn + nghe):
+		Ví dụ:
+			Đào tạo kiến thức cơ bản về cấu trúc mạng lưới viễn thông.
+		Mục tiêu:
+			Nhân viên sẽ nắm được:
+				+ Các thành phần chính của mạng viễn thông.
+				+ Chức năng của từng thành phần, 
+				+ Vs mỗi thành phần xác định đơn vị chịu trách nhiệm phát triển, vận hành, quản lý nghiệp vụ của hệ thống
+		Xác định công cụ đánh giá quá trình:
+			+ Quan sát thái độ
+				Công cụ: 
+					Chuyên cần => Bảng điểm danh
+					Tương tác của học viênch
+						=> Đầu buổi: Đặt câu hỏi trên menti: 
+							Bạn hiểu gì về mạng viễn thông
+							Mong muốn của bạn khi tham gialớp học.
+						=> Giữa buổi:
+							Tổ chức quizziz (10 câu), đánh giá học viên hay tham gia và nắm được đúng thông tin.
+						=> Cuối buổi:
+							Chia nhóm yêu cầu vẽ lại và trình bày trước lớp về mô hình theo ý hiểu và các nhóm góp ý.
+					Sự tập trung vào bài giảng => Sử dụng quizziz, đọc report, menti.com 
+			+ Quan sát sản phẩm đầu ra:
+			
+		Làm rõ:
+			
